@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const User = require('../models/User');
+const User = require('./User');
 
 // GET all users (with pagination + search)
 router.get('/', async (req, res) => {
