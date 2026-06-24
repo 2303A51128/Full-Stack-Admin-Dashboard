@@ -19,8 +19,8 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 // API Routes
-app.use('/api/users', require('./routes/users'));
-app.use('/api/orders', require('./routes/orders'));
+app.use('/api/users', require('./users'));
+app.use('/api/orders', require('./orders'));
 
 // Health check
 app.get('/api/health', (req, res) => {
